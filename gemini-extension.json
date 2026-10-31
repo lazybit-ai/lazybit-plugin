@@ -1,0 +1,10 @@
+{
+  "name": "lazybit",
+  "version": "0.1.0",
+  "description": "Set up LazyBit's AI agent and Translate on your website from your agent.",
+  "contextFileName": "AGENTS.md",
+  "mcpServers": {
+    "lazybit": { "httpUrl": "https://dashboard.lazybit.ai/mcp" },
+    "lazybit-docs": { "httpUrl": "https://lazybit.ai/docs/mcp" }
+  }
+}

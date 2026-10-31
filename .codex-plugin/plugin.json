@@ -1,0 +1,51 @@
+{
+  "name": "lazybit",
+  "version": "0.1.0",
+  "description": "Set up LazyBit on your website from your coding agent: add the site, put the AI agent and Translate tags into your code, verify the domain, switch everything on, then tune the agent, its knowledge base and the translation, and read how visitors use it.",
+  "author": {
+    "name": "LazyBit",
+    "email": "support@lazybit.ai",
+    "url": "https://lazybit.ai"
+  },
+  "homepage": "https://lazybit.ai/developers/ai-assistant",
+  "repository": "https://github.com/lazybit-ai/lazybit-plugin",
+  "license": "MIT",
+  "keywords": [
+    "website",
+    "ai agent",
+    "chatbot",
+    "chat widget",
+    "translation",
+    "localization",
+    "knowledge base",
+    "rag",
+    "mcp"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "LazyBit",
+    "shortDescription": "AI agent and translation for your website",
+    "longDescription": "Set up LazyBit on your website from your coding agent: add the site, put the AI agent and Translate tags into your code, verify the domain, switch everything on, then tune the agent, its knowledge base and the translation, and read how visitors use it.",
+    "developerName": "LazyBit",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://lazybit.ai",
+    "supportURL": "https://lazybit.ai/contact",
+    "privacyPolicyURL": "https://lazybit.ai/privacy",
+    "termsOfServiceURL": "https://lazybit.ai/terms",
+    "defaultPrompt": [
+      "Set up LazyBit on this site.",
+      "Add our returns policy to the LazyBit agent's knowledge base.",
+      "What did visitors ask the LazyBit agent about this month?"
+    ],
+    "composerIcon": "./assets/icon.png",
+    "logo": "./assets/icon.png",
+    "logoDark": "./assets/icon.png",
+    "screenshots": []
+  }
+}

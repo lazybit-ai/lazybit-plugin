@@ -1,0 +1,15 @@
+{
+  "name": "lazybit",
+  "description": "The LazyBit plugin for AI coding agents.",
+  "owner": {
+    "name": "LazyBit",
+    "url": "https://lazybit.ai"
+  },
+  "plugins": [
+    {
+      "name": "lazybit",
+      "source": "./",
+      "description": "Set up LazyBit's AI agent and Translate on your website, tune them and read how visitors use them."
+    }
+  ]
+}

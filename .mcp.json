@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "lazybit": {
+      "type": "http",
+      "url": "https://dashboard.lazybit.ai/mcp"
+    },
+    "lazybit-docs": {
+      "type": "http",
+      "url": "https://lazybit.ai/docs/mcp"
+    }
+  }
+}

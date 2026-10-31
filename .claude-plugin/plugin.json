@@ -1,0 +1,31 @@
+{
+  "name": "lazybit",
+  "displayName": "LazyBit",
+  "version": "0.1.0",
+  "description": "Set up LazyBit on your website from your coding agent: add the site, put the AI agent and Translate tags into your code, verify the domain, switch everything on, then tune the agent, its knowledge base and the translation, and read how visitors use it.",
+  "author": {
+    "name": "LazyBit",
+    "email": "support@lazybit.ai",
+    "url": "https://lazybit.ai"
+  },
+  "homepage": "https://lazybit.ai/developers/ai-assistant",
+  "privacyPolicyUrl": "https://lazybit.ai/privacy",
+  "termsOfServiceUrl": "https://lazybit.ai/terms",
+  "supportUrl": "https://lazybit.ai/contact",
+  "icon": "./assets/icon.png",
+  "repository": "https://github.com/lazybit-ai/lazybit-plugin",
+  "license": "MIT",
+  "keywords": [
+    "website",
+    "ai agent",
+    "chatbot",
+    "chat widget",
+    "translation",
+    "localization",
+    "knowledge base",
+    "rag",
+    "mcp"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json"
+}
