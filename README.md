@@ -62,7 +62,7 @@ Owners and admins of a LazyBit account can connect. The `lazybit-docs` server ne
 
 ## What it cannot do
 
-Deleting a site or the account, API keys, your own AI provider key, billing and plans, and the team stay in
+Deleting a site or the account, your own AI provider key, billing and plans, and the team stay in
 the LazyBit dashboard. Every change your agent makes is listed there under **Activity**.
 
 Docs: [Set up with your AI assistant](https://lazybit.ai/developers/ai-assistant) · Support: support@lazybit.ai

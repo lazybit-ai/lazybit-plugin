@@ -13,7 +13,7 @@ For questions about how LazyBit works, search the `lazybit-docs` server (`search
 2. Before you edit the site's code, read `get_sdk_docs` for `setup`, `translate` and `agent`. Mark up the pages
    as they describe: `data-i18n-ignore` for text that must not be translated, `data-agent-ignore` for what the
    agent must not touch, `data-rag-ignore` for what it must not learn, `data-lb-secret` for secrets.
-3. `get_install_code` returns the tags with their keys. Put them where the guide says, show the user the change
+3. `get_install_code` returns the tags for the site. Put them where the guide says, show the user the change
    and **ask before deploying**.
 4. Verify the domain yourself: `get_verification_steps`, put the proof into the code (the attribute on the
    script tag is usually enough), deploy, then `verify_site`. Ask the user for a DNS record only when no other
@@ -22,6 +22,6 @@ For questions about how LazyBit works, search the `lazybit-docs` server (`search
    `set_agent_enabled`, and write the agent's first instructions with `generate_agent_prompt`.
 6. Finish with `check_installation` (it reads the live homepage, so deploy first) and fix what it reports.
 
-Deleting sites or the account, keys, the own AI provider key, billing, plans and the team are done by the
+Deleting sites or the account, the own AI provider key, billing, plans and the team are done by the
 owner in the dashboard; tools that hit a plan limit say what is needed. If a tool you needed was missing or a
 guide was wrong, tell LazyBit with `give_feedback`.

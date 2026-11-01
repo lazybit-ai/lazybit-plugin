@@ -17,7 +17,7 @@ Rules that matter:
 - Verifying the domain is your job (`get_verification_steps` → code → deploy → `verify_site`).
 - Read a setting before changing it, change only what was asked, and say what changed; `get_recent_changes`
   has the old values for an undo.
-- Never: deleting sites or the account, keys, the own AI provider key, billing, plans, the team — the owner
+- Never: deleting sites or the account, the own AI provider key, billing, plans, the team — the owner
   does those in the dashboard.
 - Something missing or unclear? `give_feedback`.
 
