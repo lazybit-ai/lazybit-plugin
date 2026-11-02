@@ -1,6 +1,6 @@
 ---
 name: lazybit-setup
-description: Set LazyBit up on the website in this project — add the site, put the AI agent and Translate tags into the code, verify the domain, switch the products on and check the install. Use when the user asks to install, add or set up LazyBit, its AI agent or its translation.
+description: Set LazyBit up on the website in this project — add the site, put the AI agent and Translate tags into the code, verify the domain, switch the products on, check the install and offer the user the main choices (chat look, languages, limits). Use when the user asks to install, add or set up LazyBit, its AI agent or its translation.
 ---
 
 # Set up LazyBit on this website
@@ -21,6 +21,12 @@ For questions about how LazyBit works, search the `lazybit-docs` server (`search
 5. Choose languages with `set_languages`, switch the products on with `set_translation_enabled` and
    `set_agent_enabled`, and write the agent's first instructions with `generate_agent_prompt`.
 6. Finish with `check_installation` (it reads the live homepage, so deploy first) and fix what it reports.
+7. When `get_setup_plan` says the setup is complete, ask the user **once**, in one message, about the optional
+   choices in its `personalise` section — the chat's look, languages, the agent's name, instructions and
+   suggested prompts, and the limits — with their current values. Offer only the choices it marks `available`
+   (the plan and this connection decide); apply what the user picks with the tool each choice names, and nothing
+   else. The limits are starting values: say what they are and that the user may change or switch them off, but
+   change them only when asked. If the user keeps the defaults, the setup is finished; do not ask again.
 
 Deleting sites or the account, the own AI provider key, billing, plans and the team are done by the
 owner in the dashboard; tools that hit a plan limit say what is needed. If a tool you needed was missing or a
