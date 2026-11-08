@@ -8,6 +8,10 @@ description: Set LazyBit up on the website in this project — add the site, put
 You work through the `lazybit` MCP server; the user signs in once in the browser when you first call it.
 For questions about how LazyBit works, search the `lazybit-docs` server (`search_lazybit_docs`).
 
+0. If the user has no LazyBit account yet, call `get_started` on the `lazybit-docs` server (pass `client` = which
+   assistant you are) and give the user its sign-up link. Only the user creates the account, in their browser — never
+   fill in the form. Once they have signed up, continue with step 1; the sign-in to the `lazybit` server follows.
+
 1. Call `get_setup_plan` (with `site_id` when the account has several sites). Do its next step, then call it
    again. Repeat until it says the setup is complete — it always names the next tool.
 2. Before you edit the site's code, read `get_sdk_docs` for `setup`, `translate` and `agent`. Mark up the pages

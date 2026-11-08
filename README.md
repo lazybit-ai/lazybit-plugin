@@ -16,7 +16,7 @@ On older Claude Code versions, add the marketplace first:
 
 ```
 /plugin marketplace add lazybit-ai/lazybit-plugin
-/plugin install lazybit
+/plugin install lazybit@lazybit
 ```
 
 ### Codex
@@ -28,8 +28,18 @@ codex plugin add lazybit@lazybit
 
 ### Cursor
 
+Once the plugin is listed in Cursor's plugin directory:
+
 ```
 /add-plugin lazybit
+```
+
+Until then, connect the two servers below in Cursor's MCP settings.
+
+### Gemini CLI
+
+```bash
+gemini extensions install https://github.com/lazybit-ai/lazybit-plugin
 ```
 
 ### Any other MCP client
