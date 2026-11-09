@@ -16,7 +16,9 @@ For questions about how LazyBit works, search the `lazybit-docs` server (`search
    again. Repeat until it says the setup is complete — it always names the next tool.
 2. Before you edit the site's code, read `get_sdk_docs` for `setup`, `translate` and `agent`. Mark up the pages
    as they describe: `data-i18n-ignore` for text that must not be translated, `data-agent-ignore` for what the
-   agent must not touch, `data-kb-ignore` for what it must not learn, `data-lb-secret` for secrets.
+   agent must not touch, `data-kb-ignore` for what it must not learn, `data-lb-secret` for secrets. Standard ARIA
+   tabs need nothing; if the site's tabs are not standard ARIA tabs, mark each panel `data-lb-section="Name"` so
+   each one is learned on its own.
 3. `get_install_code` returns the tags for the site. Put them where the guide says, show the user the change
    and **ask before deploying**.
 4. Verify the domain yourself: `get_verification_steps`, put the proof into the code (the attribute on the
