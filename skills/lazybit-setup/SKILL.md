@@ -14,9 +14,14 @@ For questions about how LazyBit works, search the `lazybit-docs` server (`search
 
 1. Call `get_setup_plan` (with `site_id` when the account has several sites). Do its next step, then call it
    again. Repeat until it says the setup is complete — it always names the next tool.
-2. Before you edit the site's code, read `get_sdk_docs` for `setup`, `translate` and `agent`. Mark up the pages
-   as they describe: `data-i18n-ignore` for text that must not be translated, `data-agent-ignore` for what the
-   agent must not touch, `data-kb-ignore` for what it must not learn, `data-lb-secret` for secrets. Standard ARIA
+2. Before you edit the site's code, read `get_sdk_docs` for `setup`, `translate` and `agent`, and prepare the
+   shared layout while you add the tags, so the agent learns each page's content and not the shell: every menu
+   (header, sidebar, breadcrumbs, footer links) in a real `<nav>`, the page's own content in `<main>`, and
+   `data-kb-ignore` on the rest of the shell (header search, footer text, live counters, ads, newsletter boxes).
+   Then mark up the pages as the guides describe: `data-agent-ignore` for what the agent must not read or touch
+   (sign-in, payment, account areas, delete or cancel controls), `data-lb-secret` for secrets shown on screen,
+   `data-i18n-ignore` for text that must not be translated. Make actions buttons or forms, not links; label
+   fields and icon-only buttons. Standard ARIA
    tabs need nothing; if the site's tabs are not standard ARIA tabs, mark each panel `data-lb-section="Name"` so
    each one is learned on its own, and let the button that opens a panel point at it (`aria-controls="<panel id>"`,
    or a same-page link `href="#<panel id>"`; `data-lb-section-open="Name"` only when it can do neither).

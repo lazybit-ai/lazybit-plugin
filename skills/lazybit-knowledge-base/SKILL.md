@@ -18,5 +18,8 @@ description: Improve what the LazyBit AI agent knows — find what visitors ask 
 4. Review learning: `list_pending_pages` and `approve_pending_page` / `reject_pending_page`;
    `approve_page_update` / `reject_page_update` for changed pages. `add_excluded_pages` keeps a URL pattern out
    for good (`list_excluded_pages`, `remove_excluded_pages`).
+5. A learned page shows the site's header, footer or a live counter instead of its content, or keeps coming back
+   as changed? Fix the markup in this project (`get_sdk_docs` `agent`, "Prepare the pages"): menus in `<nav>`,
+   content in `<main>`, `data-kb-ignore` on the rest of the shell; after the deploy, `reindex_site`.
 
 Show the user every document before you add it, and never put personal data, keys or passwords into one.
