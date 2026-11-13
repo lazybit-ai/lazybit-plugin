@@ -75,6 +75,6 @@ Owners and admins of a LazyBit account can connect. The `lazybit-docs` server ne
 Deleting a site or the account, your own AI provider key, billing and plans, and the team stay in
 the LazyBit dashboard. Every change your agent makes is listed there under **Activity**.
 
-Docs: [Set up with your AI assistant](https://lazybit.ai/developers/ai-assistant) · Support: support@lazybit.ai
+Docs: [Connect your AI](https://lazybit.ai/connect-ai) · Support: support@lazybit.ai
 
 The plugin (this repository: manifests and skills) is MIT-licensed. The LazyBit service it connects to is not open source.
