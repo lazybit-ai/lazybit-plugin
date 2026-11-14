@@ -30,8 +30,8 @@ For questions about how LazyBit works, search the `lazybit-docs` server (`search
 4. Verify the domain yourself: `get_verification_steps`, put the proof into the code (the attribute on the
    script tag is usually enough), deploy, then `verify_site`. Ask the user for a DNS record only when no other
    method works. Never send them to the dashboard to verify.
-5. Choose languages with `set_languages`, switch the products on with `set_translation_enabled` and
-   `set_agent_enabled`, and write the agent's first instructions with `generate_agent_prompt`.
+5. Choose languages and switch Translate on with `set_translation` (languages and `enabled` in one call), switch
+   the AI agent on with `set_agent_enabled`, and write the agent's first instructions with `generate_agent_prompt`.
 6. Finish with `check_installation` (it reads the live homepage, so deploy first) and fix what it reports.
 7. When `get_setup_plan` says the setup is complete, ask the user **once**, in one message, about the optional
    choices in its `personalise` section — the chat's look, languages, the agent's name, instructions and
