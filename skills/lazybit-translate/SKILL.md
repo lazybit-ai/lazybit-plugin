@@ -6,7 +6,7 @@ description: Set up or change LazyBit Translate on a site — languages, transla
 # LazyBit Translate
 
 1. `get_translation_settings` for the site first.
-2. Languages: `set_languages`. On or off: `set_translation_enabled`.
+2. Languages, and on or off: `set_translation` (`languages`, `enabled`, or both in one call).
 3. How it translates: `update_translation_settings` — `instructions` (tone, terms to keep, glossary in plain
    words) and `automatic_translation`.
 4. Text that must stay as it is (brand names, code, addresses, user content): mark it in the site's code with
